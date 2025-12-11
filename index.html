@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <custom-navbar></custom-navbar>
+    
+    <main class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto">
+            <!-- Header Section -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                    Assistant IA Pro
+                </h1>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Améliorez vos scripts avec notre assistant IA intelligent. Ajoutez des fonctionnalités, des styles et des composants en un clic.
+                </p>
+            </div>
+
+            <!-- Main Features Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="code" class="text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Code Automatisé</h3>
+                    <p class="text-gray-600">Générez du code optimisé et structuré automatiquement</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="layers" class="text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Composants Web</h3>
+                    <p class="text-gray-600">Intégrez des composants réutilisables facilement</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <i data-feather="smartphone" class="text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Design Responsive</h3>
+                    <p class="text-gray-600">Interface qui s'adapte à tous les appareils</p>
+                </div>
+            </div>
+
+            <!-- Script Enhancement Section -->
+            <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Améliorez votre Script</h2>
+                <div class="space-y-4">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <input type="text" 
+                               placeholder="Entrez votre code ou décrivez ce que vous voulez ajouter..."
+                               class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center gap-2">
+                            <i data-feather="plus"></i>
+                            Ajouter des éléments
+                        </button>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                        <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded-lg text-sm transition-colors duration-200">
+                            Navigation
+                        </button>
+                        <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded-lg text-sm transition-colors duration-200">
+                            Footer
+                        </button>
+                        <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded-lg text-sm transition-colors duration-200">
+                            Carousel
+                        </button>
+                        <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded-lg text-sm transition-colors duration-200">
+                            Formulaire
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Local Information Section -->
+            <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i data-feather="map-pin"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800">Information Locale</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Commerces Section -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Commerces de proximité</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Epicerie Locale Bio, marchés des Echelles et Entre Deux Guiers, boulangerie, pharmacie, librairie, cinéma, et bien d'autres services à votre disposition dans notre région.
+                        </p>
+                        <div class="mt-4 grid grid-cols-2 gap-3">
+                            <div class="bg-blue-50 rounded-lg p-3">
+                                <div class="flex items-center gap-2">
+                                    <i data-feather="shopping-bag" class="text-blue-600 w-4 h-4"></i>
+                                    <span class="text-sm text-gray-700">Épicerie Bio</span>
+                                </div>
+                            </div>
+                            <div class="bg-green-50 rounded-lg p-3">
+                                <div class="flex items-center gap-2">
+                                    <i data-feather="shopping-cart" class="text-green-600 w-4 h-4"></i>
+                                    <span class="text-sm text-gray-700">Marchés</span>
+                                </div>
+                            </div>
+                            <div class="bg-orange-50 rounded-lg p-3">
+                                <div class="flex items-center gap-2">
+                                    <i data-feather="coffee" class="text-orange-600 w-4 h-4"></i>
+                                    <span class="text-sm text-gray-700">Boulangerie</span>
+                                </div>
+                            </div>
+                            <div class="bg-purple-50 rounded-lg p-3">
+                                <div class="flex items-center gap-2">
+                                    <i data-feather="book" class="text-purple-600 w-4 h-4"></i>
+                                    <span class="text-sm text-gray-700">Librairie</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Randonnées Section -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Circuits de randonnées</h3>
+                        <div class="bg-gray-50 rounded-xl p-4 h-48 flex items-center justify-center">
+                            <div class="text-center">
+                                <i data-feather="map" class="w-8 h-8 text-gray-500 mx-auto mb-2"></i>
+                            <p class="text-gray-600 text-sm">
+                                Carte interactive des circuits en Chartreuse
+                            </p>
+                            <button class="mt-3 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm transition-colors duration-200">
+                                Voir les circuits
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Local Information Section -->
+            <div class="bg-white rounded-2xl shadow-xl p-8 mb-8">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i data-feather="map-pin"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-800">Information Locale</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Commerces Section -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Commerces de proximité</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Epicerie Locale Bio, marchés des Echelles et Entre Deux Guiers, boulangerie, pharmacie, librairie, cinéma, et bien d'autres services à votre disposition dans notre région.
+                        </p>
+                        <div class="mt-4 grid grid-cols-2 gap-3">
+                            <div class="bg-blue-50 rounded-lg p-3">
+                                <div class="flex items-center gap-2">
+                                    <i data-feather="shopping-bag" class="text-blue-600 w-4 h-4"></i>
+                                    <span class="text-sm text-gray-700">Épicerie Bio</span>
+                                </div>
+                            </div>
+                            <div class="bg-green-50 rounded-lg p-3">
+                                <div class="flex items-center gap-2">
+                                    <i data-feather="shopping-cart" class="text-green-600 w-4 h-4"></i>
+                                    <span class="text-sm text-gray-700">Marchés</span>
+                                </div>
+                            </div>
+                            <div class="bg-orange-50 rounded-lg p-3">
+                                <div class="flex items-center gap-2">
+                                    <i data-feather="coffee" class="text-orange-600 w-4 h-4"></i>
+                                    <span class="text-sm text-gray-700">Boulangerie</span>
+                                </div>
+                            </div>
+                            <div class="bg-purple-50 rounded-lg p-3">
+                                <div class="flex items-center gap-2">
+                                    <i data-feather="book" class="text-purple-600 w-4 h-4"></i>
+                                    <span class="text-sm text-gray-700">Librairie</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Randonnées Section -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Circuits de randonnées</h3>
+                        <div class="bg-gray-50 rounded-xl p-4 h-48 flex items-center justify-center">
+                            <div class="text-center">
+                                <i data-feather="map" class="w-8 h-8 text-gray-500 mx-auto mb-2"></i>
+                            <p class="text-gray-600 text-sm">
+                                Carte interactive des circuits en Chartreuse
+                            </p>
+                            <button class="mt-3 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm transition-colors duration-200">
+                                Voir les circuits
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preview Section -->
+            <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl shadow-xl p-8 text-white">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                        <i data-feather="eye"></i>
+                    </div>
+                    <h2 class="text-2xl font-bold">Aperçu en Temps Réel</h2>
+                </div>
+                <div class="bg-white bg-opacity-10 rounded-xl p-6 backdrop-blur-sm">
+                        <p class="text-lg mb-4">Vos modifications apparaîtront ici instantanément</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">HTML</span>
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">CSS</span>
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-white bg-opacity-20 px-3 py-1 rounded-full text-sm">Web Components</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+</div>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
